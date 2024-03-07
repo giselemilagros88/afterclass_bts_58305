@@ -15,23 +15,40 @@
          <link rel="stylesheet" href="../css/estilos_anidado.css">
     </head>
     <body>
-        <header class="headerP">
-            <nav class="headerP__nav">
-                <a class="headerP__nav__a__logo" href="../index.html">
-                    <img class="headerP__nav__a__logo" src="../assets/img/tienda-de-cafe.png" alt="Tienda Cafe">
-                </a>
-                <ul class="headerP__nav__ul">
-                    <li class="headerP__nav__ul__li"><a class="headerP__nav__ul__li__a" href="../index.html">Inicio</a></li>
-                    <li class="headerP__nav__ul__li"><a class="headerP__nav__ul__li__a" href="./productos.html">Productos</a></li>
-                    <li class="headerP__nav__ul__li"><a class="headerP__nav__ul__li__a" href="./nosotros.html">Nosotros</a></li>
-                    <li class="headerP__nav__ul__li"><a class="headerP__nav__ul__li__a" href="./sucursales.html">Sucursales</a></li>
-                    <li class="headerP__nav__ul__li"><a class="headerP__nav__ul__li__a" href="./contacto.html">Contacto</a></li>
-                 </ul>
-            </nav>
-            <section class="headerP__titulos">
-                <h1>SOMOS CAFE <br><span class="estiloTitulo">Y MUCHO MAS</span></h1>
-                <h2>Veni a disfrutar nuestros platos, perfectos para cada momento de tu día</h2>
-            </section>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bgNavegacion">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img class="logo" src="../assets/img/logo_vaso.png" alt="logo cafeteria" width="100px">
+                  </a>
+                  <!--NO TOCAR ESTE BOTON PORQUE ES EL MENU BURGER-->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end gap-3">
+                      <li class="nav-item">
+                        <a class="nav-link colorBeige fs-4" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        
+                        <a class="nav-link active colorBeigeClaro fs-4" href="./productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorBeige fs-4" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorBeige fs-4" href="./sucursales.html">Sucursales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link  colorBeige fs-4"  href="#">Contacto</a>
+                      </li>
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
+           
         </header>
         <main class="mainProductos">
             <section class="mainProductos__dulce">

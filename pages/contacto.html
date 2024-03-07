@@ -12,23 +12,44 @@
         <!--PRIMERO SIEMPRE BOOTSTRAP POR LA CASCADA-->
          <link rel="stylesheet" href="../css/bootstrap.min.css">
          <!--hojas de estilos propio-->
-         <link rel="stylesheet" href="../css/estilos.css">
+         <link rel="stylesheet" href="../css/estilos_anidado.css">
     </head>
     <body>
-        <header id="header">
-            <a href="../index.html">
-                <img src="../assets/img/logo_vaso.png" alt="Logo de la cafeteria">
-            </a>
+         <!--pagina modelo de ejemplo :https://tiendadecafe.com.ar/-->
+         <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bgNavegacion">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img class="logo" src="../assets/img/logo_vaso.png" alt="logo cafeteria" width="100px">
+                  </a>
+                  <!--NO TOCAR ESTE BOTON PORQUE ES EL MENU BURGER-->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end gap-3">
+                      <li class="nav-item">
+                        <a class="nav-link colorBeige fs-4" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        
+                        <a class="nav-link colorBeige fs-4" href="./productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorBeige fs-4" href="./nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link colorBeige fs-4" href="./sucursales.html">Sucursales</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active colorBeigeClaro fs-4"  href="#">Contacto</a>
+                      </li>
+                    </ul>
+                   
+                  </div>
+                </div>
+              </nav>
            
-            <nav>
-                <ul>
-                   <li><a href="../index.html">Inicio</a></li>
-                   <li><a href="./productos.html">Productos</a></li>
-                   <li><a href="./nosotros.html">Nosotros</a></li>
-                   <li><a href="./sucursales.html">Sucursales</a></li>
-                   <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
         </header>
         <main>
             <section>

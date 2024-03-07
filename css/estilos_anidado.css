@@ -6,18 +6,39 @@
 }
 /*cambiar el color del texto y la fuente propia de bts por la propia*/
 body{
+    margin:0;
+    padding:0;
     font-family: 'Roboto', sans-serif;
     color: rgb(24, 22, 22);
 }
-
-.bgNavegacion{
+/*header*/
+.navbar-dark.bgNavegacion{
     background-color: #111111;
-}
-.logo{
-    width: 100px;
- 
+    .logo{
+        width: 100px;
+    }
+    .navbar-nav{
+        .nav-link.colorBeige{
+            color: #8b5c3f;
+            &:hover{
+                color: #de9d75;
+                border-bottom: 1px solid  #de9d75;
+            }
+        
+        }
+        .nav-link.colorBeigeClaro{
+            color: #de9d75;
+            &:hover{
+                color: #8b5c3f;
+                border-bottom: 1px solid #8b5c3f;;
+            }
+        
+        }
+    }
+   
 }
 
+/*estilos main index*/
 .carousel-item{
     height: 30vh;
 }
@@ -31,6 +52,53 @@ body{
     }
 }
 
+/*main index: seccion principal para escritorio (mobile carrusel)*/
+.imgFondo{
+    background-image: url('../assets/img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    margin:0;
+    .tituloPrincipal{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        .grosorFuenteLight{
+            font-weight: 300;
+        
+        }
+    }
+}
+
+/*main index: seccion tarjetas*/
+.tarjeta{
+   
+    img{
+        width: 100%;
+        /*height: 200px;*/
+        object-fit: cover;
+    }
+}
+/*main:index seccion aprendeYconoce*/
+.aprendeYconoce{
+    height:40vh;
+    iframe{
+        height:100%;
+    }
+
+}
+@media screen and (max-width:768px){
+    .aprendeYconoce{
+        height: initial;
+        iframe{
+            margin-bottom:30px;
+            height:40vh;
+        }
+    }
+   
+
+}
+/*main index: seccion elegir*/
 .grillaElegir{
     width: 90%;
     margin:0 auto;
@@ -134,13 +202,26 @@ body{
   
 }/*terminan los estilos de las media queries*/
 
+
+/*estilos de botones propios*/
 .btn-primary {
     color: #fff;
-    background-color: #750dfd;
-    border-color:  #750dfd;
-  }
-  .btn-primary:hover {
-    color: #fff;
-    background-color: #3f0987;
-    border-color:  #3f0987;
-  }
+    background-color: #7d3f10;
+    border-color:  #7d3f10;
+    &:hover{
+        color: #3f1602;
+        background-color: #bd6931;
+        border-color:  #bd6931;
+    }
+}
+
+.colorMarron{
+    color:#3f1602;
+}
+.colorBeige{
+    color: #8b5c3f;
+}
+.bgBeige{
+    background-color: #8b5c3f;
+}
+

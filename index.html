@@ -27,27 +27,23 @@
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-between">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  w-100 justify-content-end gap-3">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active colorBeigeClaro fs-4" aria-current="page" href="#">Inicio</a>
                       </li>
                       <li class="nav-item">
                         
-                        <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        <a class="nav-link colorBeige fs-4" href="./pages/productos.html">Productos</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link colorBeige fs-4" href="./pages/nosotros.html">Nosotros</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="./pages/sucursales.html">Sucursales</a>
+                        <a class="nav-link colorBeige fs-4" href="./pages/sucursales.html">Sucursales</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link"  href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link colorBeige fs-4"  href="./pages/contacto.html">Contacto</a>
                       </li>
-                     
-                     
-                    
-                     
                     </ul>
                    
                   </div>
@@ -56,8 +52,8 @@
            
         </header>
           
-        <main class="mainIndex container-fluid pt-4">
-
+        <main>
+            <!--carousel para moviles-->
             <section class="d-block d-md-none ">
                 <div id="carouselExampleDark" class="carousel carousel-light slide carousel-fade" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -99,58 +95,88 @@
                     </button>
                   </div>
             </section>
-            <section class="d-none d-md-block imgFondo">
+            <!--section escritorio-->
+            <section class="container-fluid d-none d-md-flex imgFondo text-white flex-column align-items-center justify-content-center">
                 <h1 class="tituloPrincipal" > <span class="grosorFuenteLight">Tu café preferido</span> <br> SIEMPRE CERCA</h1>
                 <p >Blends, varietales, cafés del mundo.</p>
                 <p>Encontrá tu Tienda mas cercana y tentate con nuestros sabores.</p>
                 
-                <a class="linkEncontranosIndex"  href="#footer">ENCONTRANOS</a>
+                <a class="linkEncontranosIndex btn btn-primary btn-lg"  href="#footer">ENCONTRANOS</a>
 
             </section >
            
-            <section class="seccionTarjetas">
-                <h2 class="tituloSeccionTarjetas">NUESTROS PRODUCTOS</h2>
-                <div class="contenedorTarjetas">
-                    <section class="tarjeta">
+            <section class="container-fluid">
+                <h2 class="text-center mt-5 mb-5 fs-1 colorMarron">NUESTROS PRODUCTOS</h2>
+                <!--version de movil-->
+                <div class="d-block d-md-none">
+                  <div class="row gap-2 justify-content-center align-items-center">
+                    <section class="tarjeta col-5 img-thumbnail">
                         <img class="imgTarjeta" src="./assets/img/cafe_cards_index.jpg" alt="">
                         <h4>Café</h4>
     
                     </section>
-                    <section class="tarjeta">
+                    <section class="tarjeta col-5  img-thumbnail">
                         <img class="imgTarjeta" src="./assets/img/cafe_cards_index.jpg" alt="">
                         <h4>Café</h4>
                     </section>
-                    <section class="tarjeta">
+                    <section class="tarjeta col-5 img-thumbnail">
                         <img class="imgTarjeta" src="./assets/img/cafe_cards_index.jpg" alt="">
                         <h4>Café</h4>
                     </section>
-                    <section class="tarjeta">
+                    <section class="tarjeta col-5  img-thumbnail">
                         <img class="imgTarjeta" src="./assets/img/cafe_cards_index.jpg" alt="">
                         <h4>Café</h4>
                     </section>
-                    <section class="tarjeta">
-                        <img class="imgTarjeta" src="./assets/img/cafe_cards_index.jpg" alt="">
-                        <h4>Café</h4>
-                    </section>
+                   
                 </div>
+                </div>
+               
+                <!--version de escritorio-->
+                <div class="d-none d-md-block mx-2">
+                  <div class="d-flex gap-3 justify-content-center align-items-center">
+                    <section class="tarjeta d-flex flex-column align-items-center img-thumbnail">
+                        <img class="imgTarjeta mt-1" src="./assets/img/cafe_cards_index.jpg" alt="">
+                        <h4>Café</h4>
+    
+                    </section>
+                    <section class="tarjeta d-flex flex-column align-items-center  img-thumbnail">
+                        <img class="imgTarjeta mt-1" src="./assets/img/cafe_cards_index.jpg" alt="">
+                        <h4>Café</h4>
+                    </section>
+                    <section class="tarjeta d-flex flex-column  align-items-center  img-thumbnail">
+                        <img class="imgTarjeta mt-1" src="./assets/img/cafe_cards_index.jpg" alt="">
+                        <h4>Café</h4>
+                    </section>
+                    <section class="tarjeta d-flex flex-column align-items-center  img-thumbnail">
+                        <img class="imgTarjeta mt-1" src="./assets/img/cafe_cards_index.jpg" alt="">
+                        <h4>Café</h4>
+                    </section>
+                   
+                </div>
+                </div>
+               
             
 
             </section>
-            <section class="aprendeYconoce">
-                <section class="tarjeta aprende">
-                    <h3>Aprendé a hacer tu café como un experto</h3>
-                    <h2>SECRETOS DEL BARISTA</h2>
-                    <a href="">VER</a>
-
-                </section>
-                <section class="tarjeta conoce">
-                    <h3>Conocé todo lo que podés encontrar en nuestros locales</h3>
-                    <h2>NUESTROS PLATOS</h2>
-                    <a href="">VER</a>
-                    
-                </section>
-
-            </section>
+            <div class="bgBeige pt-5 pb-5">
+              <section class="mt-5 container">
+                <div class="row aprendeYconoce">
+                  <section class="col-12 h-100 col-md-6 tarjeta aprende order-1 order-md-0">
+                    <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                      <h3>Aprendé a hacer tu café como un experto</h3>
+                      <h2>SECRETOS DEL BARISTA</h2>
+                      <a class="btn btn-primary btn-lg" href="">VER</a>
+                    </div>
+                     
+  
+                  </section>
+                  <section class="col-12 h-100 col-md-6 tarjeta conoce order-0 order-md-1">
+                    <iframe class="w-100" src="https://www.youtube.com/embed/ZQHWodaFNfA?si=xVrm1PE2KZzvwZe8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </section>
+                </div>
+              </section>
+            </div>
+           
             <section class="grillaElegir">
                 <div class="titulo">
                     <h3>NUESTRO CAFÉ</h3>
